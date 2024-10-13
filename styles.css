@@ -1,0 +1,142 @@
+/*body*/
+
+.crusher-div {
+
+    .body-class{
+        background-color: #ede8f5;
+    }
+    .header-class{
+        background-color: #8697c4;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        display: block;
+        color: #3d52a0;
+    }
+    
+    /*Navbar*/
+    
+    .nav-class{
+        background-color: #91a6c2;
+    }
+    
+    .nav-class a{
+        cursor: pointer;
+        color: #2c7210;
+        text-decoration: none;
+    }
+    
+    .nav-class a:visited{
+        color: #561072;
+    }
+    
+    .nav-class a:hover, .nav-class a:focus{
+        color: blue;
+    }
+    
+    .nav-class a:active{
+        color: red;
+    }
+
+    /*titles*/
+
+    .title-class{
+        background-color: #8697c4;
+    }
+
+    .section-title-class{
+        background-color: #A6BFDF;
+    }
+
+    .text-class{
+        color: #3d52a0;
+    }
+
+    /*Picture*/
+
+
+    .image-class{
+        border: 5px solid;
+        border-color: #7091e6;
+        width: 800px;
+    }
+
+    /*forms*/
+
+
+    .input-class{
+        background-color: #adbbda;
+    }
+
+    .button-class{
+        color: #ede8f5;
+        background-color: #3d52a0;
+    }
+
+    /*footer*/
+
+    .footer-class{
+        background-color: #8697c4;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        display: block;
+        
+    }
+
+    .text-class2{
+        color: #232e58;
+    }
+
+    body{
+        margin: 20px auto;
+        padding: 30px;
+        font-size: 30px;
+        width: 300px;
+        height: 300px;
+    }
+    
+}
+
+
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .crusher-div {
+      width: 400px;
+      height: 400px;
+    }
+    .image-class{
+        border: 5px solid;
+        border-color: #7091e6;
+        width: 200px;
+    }
+}
+
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .crusher-div {
+      width: 200px;
+      height: 200px;
+    }
+    .image-class{
+        border: 5px solid;
+        border-color: #7091e6;
+        width: 100px;
+    }
+  }
+  
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+    .crusher-div {
+      width: 400px;
+      height: 200px;
+    }
+    .image-class{
+        border: 5px solid;
+        border-color: #7091e6;
+        width: 200px;
+    }
+  }
+  
