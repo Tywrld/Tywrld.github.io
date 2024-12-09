@@ -1,0 +1,336 @@
+<html>
+  <head>
+    <!--Webpage title-->
+    <title>Hope Haven Initiative | Help-Hub.com</title>
+
+    <meta name="description" content="Homepage for a website about charites" />
+    <!--javascript-->
+
+    <script src="charity-2.js"></script>
+    <!--Links-->
+    <link rel="stylesheet" href="Charity-profile-2.css" />
+    <link rel="shortcut icon" href="Favicon.jpg" type="image/x-icon" />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--styles-->
+    <style>
+      .fa {
+        padding: 10px;
+        font-size: 10px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 20%;
+      }
+
+      .fa:hover {
+        opacity: o.7;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55acee;
+        color: white;
+      }
+
+      .fa-facebook {
+        background: #3b5998;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <!--Body of website-->
+
+  <body>
+    <header>
+      <h1 class="title" style="text-align: center">Help-Hub.com</h1>
+
+      <!--top navbar-->
+      <div class="top-navagation">
+        <a href="index.html" class="logo">Help-Hub.com</a>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="charities.html">Charites</a>
+          <a href="Profile.html">Profile</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!--About the charity-->
+      <h2 class="small-title">Hope Haven Initiative</h2>
+      <hr class="about-line" />
+      <section class="about">
+        <section class="background">
+          <p>
+            charity dedicated to providing accessible mental health services,
+            emotional support, and wellness resources to communities that face
+            barriers to quality mental health care. Recognizing that mental
+            well-being is foundational to a fulfilling life, Hope Haven
+            Initiative envisions a society where mental health care is
+            normalized, accessible, and empathetically delivered, ensuring
+            everyone has the support they need to thrive.
+          </p>
+        </section>
+        <span id="dots"> </span
+        ><span id="more">
+          <section class="mission">
+            <h3>Mission:</h3>
+            <p>
+              The mission of Hope Haven Initiative is to empower individuals and
+              communities by breaking down stigmas, expanding access to mental
+              health resources, and fostering emotional resilience. The
+              organization provides support services for people of all ages and
+              backgrounds, with a special focus on underserved communities that
+              face obstacles such as poverty, limited resources, or cultural
+              stigmas around mental health.
+            </p>
+          </section>
+          <section class="programs">
+            <h3>Programs and Services</h3>
+            <ul>
+              <li>
+                <strong>Community Counseling Centers:</strong> Hope Haven
+                operates counseling centers that provide free or low-cost mental
+                health services, including individual and group therapy, crisis
+                intervention, and family counseling. Licensed professionals and
+                trained counselors create a welcoming and supportive environment
+                for all clients, offering both in-person and telehealth options.
+              </li>
+              <li>
+                <strong>Youth Empowerment & Resilience Program:</strong> This
+                program is tailored for youth, offering school-based counseling,
+                workshops on managing stress and building resilience, and
+                peer-led support groups. By helping young people develop coping
+                strategies early on, the initiative hopes to reduce mental
+                health challenges before they escalate into crises.
+              </li>
+              <li>
+                <strong>Mobile Mental Health Units:</strong> To reach rural and
+                remote communities with limited access to mental health care,
+                Hope Haven Initiative deploys mobile units equipped with mental
+                health resources and staffed with licensed professionals. These
+                units visit areas on a rotating schedule to provide free
+                counseling, workshops, and crisis intervention services.
+              </li>
+              <li>
+                <strong>Crisis Hotline and Text Support:</strong> A 24/7
+                helpline and text support service provide immediate,
+                confidential support for those in need. Staffed by trained
+                counselors, the service is available to anyone experiencing
+                distress, crisis, or needing someone to talk to. It also
+                includes special hotlines for veterans, LGBTQ+ individuals, and
+                young people facing bullying, self-harm, or suicidal thoughts.
+              </li>
+              <li>
+                <strong>Community Wellness Workshops:</strong> Hope Haven
+                Initiative hosts workshops on mental wellness topics such as
+                stress management, mindfulness, healthy communication, and
+                self-care. These workshops are open to the public and aim to
+                normalize conversations around mental health, reduce stigma, and
+                provide participants with practical tools for everyday life.
+              </li>
+              <li>
+                <strong>Training and Support for Community Leaders:</strong>
+                This program provides training in mental health first aid,
+                empathetic listening, and crisis intervention for teachers,
+                community leaders, and other front-line individuals. It equips
+                community members to identify and respond to mental health
+                needs, creating a supportive network within the community
+                itself.
+              </li>
+            </ul>
+          </section>
+        </span>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+      </section>
+
+      <div class="Picture">
+        <img
+          src="Charity_pic_2.jpg"
+          width="300"
+          height="300"
+          alt="hearts and teddy bears being held"
+        />
+      </div>
+
+      <hr class="about-line-2" />
+
+      <!--User info-->
+      <div class="info">
+        <div class="user-info">
+          <h2 class="title">Reqiured information</h2>
+
+          <form class="user-details">
+            <div class="input-box">
+              <span class="details">Fisrt Name</span>
+              <input
+                type="text"
+                id="fname"
+                placeholder="Enter your first name"
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Last Name</span>
+              <input
+                type="text"
+                id="lname"
+                placeholder="Enter your last name"
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" id="email" placeholder="Enter your email" />
+            </div>
+            <div class="input-box">
+              <span class="details">City</span>
+              <input type="text" id="city" placeholder="City" />
+            </div>
+            <div class="input-box">
+              <span class="details">Zip</span>
+              <input type="text" id="zip" placeholder="Zip" />
+            </div>
+
+            <div class="input-box">
+              <span class="details">State</span>
+              <select name="State">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AR">AR</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+              </select>
+            </div>
+            <!--Reactive button-->
+
+            <div class="button">
+              <input
+                id="form-btn"
+                type="button"
+                onclick="openPopup()"
+                value="Volunteer Now"
+              />
+
+              <p class="or-class">or</p>
+
+              <!--Donate Button-->
+              <div class="donate-btn" id="every-donate-btn">
+                <a href="https://www.every.org/lilbubsbigfund#/donate"
+                  >Donate</a
+                >
+              </div>
+              <script
+                async
+                defer
+                src="https://embeds.every.org/0.4/button.js?explicit=1"
+                id="every-donate-btn-js"
+              ></script>
+              <script src="donate-button-2.js"></script>
+
+              <div class="popup" id="popup">
+                <img src="404-tick.png" alt="check mark confromation" />
+                <h2>Thank You!</h2>
+                <p>
+                  Your details has been successfully sent to our server. Thanks
+                  for making our community a better place
+                </p>
+                <button type="button" onclick="closePopup()">OK</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="charity-2-popup.js"></script>
+    </main>
+
+    <footer>
+      <!--Bottom Navagtion-->
+      <div class="bottom-navagation">
+        <a href="#" class="logo"><h6>Help-Hub.com</h6></a>
+        <section class="contact">
+          <h4>Contact Us</h4>
+          <hr class="contact-line" />
+          <ul>
+            <li>
+              <a href="tel:999-999-9999">Call the Admin of this website</a>
+            </li>
+            <li><a href="mailto: name@email.com">Email us feedback</a></li>
+          </ul>
+        </section>
+
+        <section class="social">
+          <h4>Socials</h4>
+          <hr class="socials-line" />
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+        </section>
+
+        <!--copyright info-->
+        <section class="copyright-info">
+          <h5>&copy; 2024 Help-Hub All rights reserved</h5>
+          <h5>
+            <a href="#">Privacy Policy</a>
+          </h5>
+          <h5>
+            <a href="#">Terms of Service</a>
+          </h5>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

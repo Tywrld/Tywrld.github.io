@@ -1,0 +1,366 @@
+body {
+    background-image: url("Tree_stockphoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ 
+  
+  .container {
+    margin: 100px;
+    background-color: #fff;
+    border-radius: 150px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+  }
+  
+  .container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+  }
+  
+  
+  .container span {
+    font-size: 12px;
+  }
+  
+  .container a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+  }
+  .container button {
+    background-color: seagreen;
+    color: #fff;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+  }
+  
+  .container form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+  }
+  
+  .container input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+  }
+  
+  .sign-up, .sign-in {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .sign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+  }
+  
+  .container.active .sign-in {
+    transform: translateX(100%);
+  }
+  
+  .sign-up {
+    left: 0;
+    width: 50%;
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .container.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+  }
+  
+  @keyframes move {
+    0%, 49.99%{
+      opacity: 0;
+      z-index: 1;
+    }
+     50%, 100%{
+      opacity: 1;
+      z-index: 5;
+    }
+  }
+  
+  .icons {
+    margin: 20px 0;
+  }
+  
+  .icons a {
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .toogle-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 150px;
+    z-index: 1000;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .container.active .toogle-container {
+    transform: translateX(-100%);
+    border-radius: 150px;
+  }
+  
+  .toogle {
+    background-color: seagreen;
+    height: 100%;
+    background: linear-gradient(to right, #2e8b, #2e8b57);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .container.active .toogle {
+    transform: translateX(50%);
+  }
+  
+  .toogle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .toogle-left {
+    transform: translateX(-200%);
+  }
+  
+  .container.active .toogle-left {
+    transform: translateX(0);
+  }
+  
+  .toogle-right {
+    right: 0;
+    transform: translateX(0);
+  }
+  
+  .container.active .toogle-right {
+    transform: translateX(200%);
+  }
+
+  
+  
+  /*navagation*/
+  
+  
+  /*Top navagation*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .top-navagation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo{
+    font-size: 32px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .navbar a {
+    position: relative;
+    font-size: 16px;
+    color: #ffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffff;
+    transition: .3s;
+  }
+  
+  .navbar a:hover:before {
+    width: 100%;
+  }
+  
+  
+  
+  /*bottom nav*/
+  
+  
+  
+  
+  .bottom-navagation{
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  /*Contact elements*/
+  
+  .contact h4{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .contact h6{
+    text-align: left;
+  }
+  
+  .contact a{
+    text-decoration: none;
+    color: #ffff;
+  }
+  
+  .contact li{
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .contact ul{
+    text-align: left;
+    padding: 0;
+  }
+  
+  .contact li {
+    position: relative;
+    font-size: 16px;
+    color: #ffff;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .contact li::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffff;
+    transition: .3s;
+  }
+  
+  .contact li:hover:before {
+    width: 100%;
+  }
+  
+  
+  
+  /* Social elements*/
+  
+  .social h4{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  
+  
+  /*copyright elements*/
+  
+  .copyright-info {
+    align-items: center;
+    bottom: 0;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .copyright-info h5{
+    font-size: 10px;
+  }
+  
+  .copyright-info a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  

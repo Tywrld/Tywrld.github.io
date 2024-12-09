@@ -1,0 +1,406 @@
+body {
+    background-image: url("Tree_stockphoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+/*main content*/
+
+#more {display: none;}
+
+#myBtn{
+  display: grid;
+height: 40px;
+width: 125px;
+background: rgb(15, 186, 15);
+margin: auto;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+place-items: center;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #ffff;
+text-decoration: none;
+font-size: 20px;
+font-weight: 500;
+border-radius: 5%;
+}
+
+#myBtn:hover{
+  opacity: 70%;
+  }
+
+.small-title{
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+
+.about-line{
+  border-radius: 10px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border: 1px solid black;
+}
+
+.background{
+  padding-bottom: 20px;
+}
+
+.about{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.mission{
+  padding-bottom: 20px;
+}
+
+.programs{
+  padding-bottom: 20px;
+}
+
+
+.Picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Picture img{
+  margin-top: 20px;
+  border: 5px solid seagreen;
+  border-radius: 5px;
+}
+
+.about-line-2{
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border: 1px solid black;
+}
+
+
+/*sign-up box*/
+
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.user-info{
+  background: linear-gradient(135deg, #2e8b57, #31b56a );
+  opacity: 95%;
+  max-width: 700px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.user-info .title{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  
+.user-info .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #333;
+}
+
+form .button{
+  height: 45px;
+  width: 100%;
+  margin: 45px 0;
+  
+}
+
+form .button input{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #ffff;
+  background: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/*donate button*/
+
+.or-class{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+}
+
+
+.donate-btn{
+  display: grid;
+  align-items: center;
+justify-content: center;
+}
+
+
+
+/*reactive button*/
+
+
+
+.popup{
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: visible;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 120%;
+  transform: translate(-50%,-50%) scale(1);
+
+}
+
+.popup img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+
+}
+
+.popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*Top navagation*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+  .top-navagation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .logo{
+    font-size: 32px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  .navbar a {
+    position: relative;
+    font-size: 16px;
+    color: #ffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffff;
+    transition: .3s;
+  }
+
+  .navbar a:hover:before {
+    width: 100%;
+  }
+
+
+
+  /*bottom nav*/
+
+
+
+
+  .bottom-navagation{
+    background-color: #333;
+    overflow: hidden;
+    position: static;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  /*Contact elements*/
+
+  .contact h4{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .contact h6{
+    text-align: left;
+  }
+
+  .contact a{
+    text-decoration: none;
+    color: #ffff;
+  }
+  
+  .contact li{
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .contact ul{
+    text-align: left;
+    padding: 0;
+  }
+
+  .contact li {
+    position: relative;
+    font-size: 16px;
+    color: #ffff;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .contact li::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffff;
+    transition: .3s;
+  }
+
+  .contact li:hover:before {
+    width: 100%;
+  }
+
+
+
+/* Social elements*/
+
+  .social h4{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+
+
+  /*copyright elements*/
+
+  .copyright-info {
+    align-items: center;
+    bottom: 0;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .copyright-info h5{
+    font-size: 10px;
+  }
+  
+  .copyright-info a{
+    text-decoration: none;
+    color: white;
+  }
+
+
+  

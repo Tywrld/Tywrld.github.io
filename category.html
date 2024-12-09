@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Webpage title-->
+    <title>Categories | Help-Hub.com</title>
+
+    <meta name="description" content="Homepage for a website about charites" />
+    <!--Links-->
+    <link rel="stylesheet" href="category.css" />
+    <link rel="shortcut icon" href="Favicon.jpg" type="image/x-icon" />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--styles-->
+    <style>
+      .fa {
+        padding: 10px;
+        font-size: 10px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 20%;
+      }
+
+      .fa:hover {
+        opacity: o.7;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55acee;
+        color: white;
+      }
+
+      .fa-facebook {
+        background: #3b5998;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <!--Body of website-->
+
+  <body>
+    <header>
+      <h1 class="title" style="text-align: center">Help-Hub.com</h1>
+
+      <!--top navbar-->
+      <div class="top-navagation">
+        <a href="#" class="logo">Help-Hub.com</a>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="charities.html">Charites</a>
+          <a href="Profile.html">Profile</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!--nonprofit-details-->
+      <div class="nonprofit-info">
+        <h1>Nonprofit Categories</h1>
+        <hr class="nonprofit-line" />
+        <ul id="nonprofitTagsList"></ul>
+      </div>
+      <script src="category.js"></script>
+    </main>
+    <footer>
+      <!--Bottom Navagtion-->
+      <div class="bottom-navagation">
+        <a href="#" class="logo"><h6>Help-Hub.com</h6></a>
+        <section class="contact">
+          <h4>Contact Us</h4>
+          <hr class="contact-line" />
+          <ul>
+            <li>
+              <a href="tel:999-999-9999">Call the Admin of this website</a>
+            </li>
+            <li><a href="mailto: name@email.com">Email us feedback</a></li>
+          </ul>
+        </section>
+
+        <section class="social">
+          <h4>Socials</h4>
+          <hr class="socials-line" />
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+        </section>
+
+        <!--copyright info-->
+        <section class="copyright-info">
+          <h5>&copy; 2024 Help-Hub All rights reserved</h5>
+          <h5>
+            <a href="#">Privacy Policy</a>
+          </h5>
+          <h5>
+            <a href="#">Terms of Service</a>
+          </h5>
+        </section>
+      </div>
+    </footer>
+    <script>
+      /*
+        // Fetch data from the provided API URL
+        const URL =
+          "https://partners.every.org/v0.2/nonprofit/maps?apiKey=myPublicApiKey";
+
+        fetch(URL)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+          })
+          .then((data) => {
+            // Clear the list before populating
+            const listElement = document.getElementById("nonprofitTagsList");
+            listElement.innerHTML = "";
+
+            const nonprofitTags = data.data.nonprofitTags;
+
+            nonprofitTags.forEach((tag) => {
+              // Create a card element
+              const card = document.createElement("li");
+              card.className = "card";
+
+              // Create an image element for the tag image
+              const tagImage = document.createElement("img");
+              tagImage.src = tag.tagImageUrl;
+              tagImage.alt = tag.title;
+
+              // Create a title element
+              const tagTitle = document.createElement("div");
+              tagTitle.textContent = tag.title;
+
+              // Create a link element for the tag
+              const tagLink = document.createElement("a");
+              tagLink.href = tag.tagUrl;
+              tagLink.textContent = "Learn More";
+              tagLink.target = "_blank"; // Opens link in a new tab
+
+              // Append elements to the card
+              card.appendChild(tagImage);
+              card.appendChild(tagTitle);
+              card.appendChild(tagLink);
+
+              // Append the card to the list
+              listElement.appendChild(card);
+            });
+          })
+          .catch((error) => {
+            console.error("Error fetching data:", error);
+          }); */
+    </script>
+  </body>
+</html>

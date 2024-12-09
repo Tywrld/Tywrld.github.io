@@ -1,0 +1,330 @@
+<html>
+  <head>
+    <!--Webpage title-->
+    <title>Pathways of Promise | Help-Hub.com</title>
+
+    <meta name="description" content="charity information page" />
+    <!--javascript-->
+
+    <script src="charity-3.js"></script>
+    <!--Links-->
+    <link rel="stylesheet" href="Charity-profile-3.css" />
+    <link rel="shortcut icon" href="Favicon.jpg" type="image/x-icon" />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--styles-->
+    <style>
+      .fa {
+        padding: 10px;
+        font-size: 10px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 20%;
+      }
+
+      .fa:hover {
+        opacity: o.7;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55acee;
+        color: white;
+      }
+
+      .fa-facebook {
+        background: #3b5998;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <!--Body of website-->
+
+  <body>
+    <header>
+      <h1 class="title" style="text-align: center">Help-Hub.com</h1>
+
+      <!--top navbar-->
+      <div class="top-navagation">
+        <a href="index.html" class="logo">Help-Hub</a>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="charities.html">Charites</a>
+          <a href="Profile.html">Profile</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!--about the charity-->
+      <h2 class="small-title">Pathways of Promise</h2>
+      <hr class="about-line" />
+      <section class="about">
+        <section class="background">
+          <p>
+            charity focused on empowering individuals to overcome socioeconomic
+            barriers and build sustainable careers through comprehensive
+            education, skill development, and employment opportunities. Driven
+            by the belief that everyone deserves a chance to pursue fulfilling
+            work and financial stability, Pathways of Promise provides
+            resources, mentorship, and hands-on training to help people create
+            brighter futures for themselves and their families.
+          </p>
+        </section>
+        <span id="dots"> </span
+        ><span id="more">
+          <section class="mission">
+            <h3>Mission:</h3>
+            <p>
+              Pathways of Promise aims to reduce poverty and unemployment by
+              equipping people with the skills, knowledge, and connections they
+              need to succeed in today's competitive job market. The charity's
+              mission is to pave the way for under-resourced individuals to
+              achieve personal and professional growth, ultimately fostering
+              self-sufficiency and breaking generational cycles of economic
+              hardship.
+            </p>
+          </section>
+          <section class="programs">
+            <h3>Programs and Services</h3>
+            <ul>
+              <li>
+                <strong>Educational Access and Scholarships:</strong> Pathways
+                of Promise provides scholarships for higher education,
+                vocational training, and certification programs, helping people
+                access learning opportunities that match their goals. This
+                program is especially designed for students from underserved
+                backgrounds who may not have the financial means to pursue
+                further education.
+              </li>
+              <li>
+                <strong>Career Skills Bootcamps:</strong> Intensive training
+                programs in areas such as computer programming, digital
+                marketing, trades, healthcare, and entrepreneurship are offered
+                to prepare individuals for high-demand industries. These
+                bootcamps include hands-on projects, job shadowing, and
+                real-world simulations to ensure participants gain practical,
+                job-ready skills.
+              </li>
+              <li>
+                <strong>Mentorship and Networking:</strong> Each participant in
+                Pathways of Promise is matched with a mentor who provides
+                personalized guidance, career advice, and emotional support.
+                These mentors are professionals from various industries who
+                offer valuable insights and help mentees expand their networks,
+                which can be crucial in accessing employment opportunities.
+              </li>
+              <li>
+                <strong>Job Placement Services:</strong> Pathways of Promise
+                partners with businesses and organizations to facilitate
+                internships, apprenticeships, and job placements for program
+                graduates. The charity works closely with local employers to
+                understand their hiring needs and to tailor its training
+                programs, ensuring that graduates are well-prepared to meet
+                industry demands.
+              </li>
+              <li>
+                <strong>Financial Literacy and Planning:</strong> Understanding
+                that financial stability requires more than just employment,
+                Pathways of Promise offers workshops on budgeting, saving,
+                managing debt, and investing. This program is designed to
+                empower individuals with the financial knowledge needed to build
+                and maintain long-term economic security.
+              </li>
+            </ul>
+          </section>
+        </span>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+      </section>
+
+      <div class="Picture">
+        <img
+          src="Charity_pic_3.jpg"
+          width="300"
+          height="300"
+          alt="Posted note that says charity"
+        />
+      </div>
+
+      <hr class="about-line-2" />
+
+      <!--User info-->
+      <div class="info">
+        <div class="user-info">
+          <h2 class="title">Reqiured information</h2>
+
+          <form class="user-details" name="theform">
+            <div class="input-box">
+              <span class="details">Fisrt Name</span>
+              <input
+                type="text"
+                id="fname"
+                placeholder="Enter your first name"
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Last Name</span>
+              <input
+                type="text"
+                id="lname"
+                placeholder="Enter your last name"
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" id="email" placeholder="Enter your email" />
+            </div>
+            <div class="input-box">
+              <span class="details">City</span>
+              <input type="text" id="city" placeholder="City" />
+            </div>
+            <div class="input-box">
+              <span class="details">Zip</span>
+              <input type="text" id="zip" placeholder="Zip" />
+            </div>
+
+            <div class="input-box">
+              <span class="details">State</span>
+              <select name="State">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AR">AR</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+              </select>
+            </div>
+            <!--Reactive button-->
+
+            <div class="button">
+              <input
+                id="form-btn"
+                type="button"
+                onclick="openPopup()"
+                value="Volunteer Now"
+              />
+
+              <p class="or-class">or</p>
+
+              <!--Donate Button-->
+              <div class="donate-btn" id="every-donate-btn">
+                <a href="https://www.every.org/lilbubsbigfund#/donate"
+                  >Donate</a
+                >
+              </div>
+              <script
+                async
+                defer
+                src="https://embeds.every.org/0.4/button.js?explicit=1"
+                id="every-donate-btn-js"
+              ></script>
+              <script src="donate-button-3.js"></script>
+
+              <div class="popup" id="popup">
+                <img src="404-tick.png" alt="check mark confromation" />
+                <h2>Thank You!</h2>
+                <p>
+                  Your details has been successfully sent to our server. Thanks
+                  for making our community a better place
+                </p>
+                <button type="button" onclick="closePopup()">OK</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <script src="charity-3-popup.js"></script>
+    </main>
+
+    <footer>
+      <!--Bottom Navagtion-->
+      <div class="bottom-navagation">
+        <a href="#" class="logo"><h6>Help-Hub.com</h6></a>
+        <section class="contact">
+          <h4>Contact Us</h4>
+          <hr class="contact-line" />
+          <ul>
+            <li>
+              <a href="tel:999-999-9999">Call the Admin of this website</a>
+            </li>
+            <li><a href="mailto: name@email.com">Email us feedback</a></li>
+          </ul>
+        </section>
+
+        <section class="social">
+          <h4>Socials</h4>
+          <hr class="socials-line" />
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+        </section>
+
+        <!--copyright info-->
+        <section class="copyright-info">
+          <h5>&copy; 2024 Help-Hub All rights reserved</h5>
+          <h5>
+            <a href="#">Privacy Policy</a>
+          </h5>
+          <h5>
+            <a href="#">Terms of Service</a>
+          </h5>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

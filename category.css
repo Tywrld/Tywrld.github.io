@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-image: url("Tree_stockphoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+/*category*/
+
+.nonprofit-info {
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+    text-align: center;
+    color: #333;
+  }
+
+  .nonprofit-line{
+    border: 3px solid black;
+    opacity: 50%;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 10px;
+    }
+
+
+  #nonprofitTagsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+    list-style: none;
+  }
+
+  .card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+
+
+  .card a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  /*navagation*/
+
+  /*Top navagation*/
+
+  .top-navagation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo{
+    font-size: 32px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .navbar a {
+    position: relative;
+    font-size: 16px;
+    color: #ffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffff;
+    transition: .3s;
+  }
+  
+  .navbar a:hover:before {
+    width: 100%;
+  }
+
+
+  /*bottom nav*/
+
+
+
+
+.bottom-navagation{
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  /*Contact elements*/
+  
+  .contact h4{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .contact h6{
+    text-align: left;
+  }
+  
+  .contact a{
+    text-decoration: none;
+    color: #ffff;
+  }
+  
+  .contact li{
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .contact ul{
+    text-align: left;
+    padding: 0;
+  }
+  
+  .contact li {
+    position: relative;
+    font-size: 16px;
+    color: #ffff;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .contact li::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffff;
+    transition: .3s;
+  }
+  
+  .contact li:hover:before {
+    width: 100%;
+  }
+  
+  
+  
+  /* Social elements*/
+  
+  .social h4{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  
+  
+  /*copyright elements*/
+  
+  .copyright-info {
+    align-items: center;
+    bottom: 0;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .copyright-info h5{
+    font-size: 10px;
+  }
+  
+  .copyright-info a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  

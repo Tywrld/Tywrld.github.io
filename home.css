@@ -1,0 +1,229 @@
+body {
+  background-image: url("Tree_stockphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*button*/
+
+.charites_button{
+display: grid;
+height: 80px;
+width: 250px;
+background: rgb(15, 186, 15);
+position: absolute;
+margin: auto;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+place-items: center;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #ffff;
+text-decoration: none;
+font-size: 20px;
+font-weight: 500;
+letter-spacing: 3px;
+border-radius: 5%;
+}
+
+
+.charites_button:hover{
+opacity: 70%;
+}
+
+/*about section*/
+
+.about{
+  margin-top: 100px;
+
+}
+
+.about h3{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+}
+
+.about p{
+padding-left: 50px;
+padding-right: 50px;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.about-line{
+border: 3px solid black;
+opacity: 50%;
+margin-left: 250px;
+margin-right: 250px;
+border-radius: 10px;
+}
+
+
+
+
+
+
+/*navagation*/
+
+
+/*Top navagation*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.top-navagation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: seagreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo{
+  font-size: 32px;
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar a {
+  position: relative;
+  font-size: 16px;
+  color: #ffff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffff;
+  transition: .3s;
+}
+
+.navbar a:hover:before {
+  width: 100%;
+}
+
+
+
+/*bottom nav*/
+
+
+
+
+.bottom-navagation{
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 20px 100px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+/*Contact elements*/
+
+.contact h4{
+  text-align: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact h6{
+  text-align: left;
+}
+
+.contact a{
+  text-decoration: none;
+  color: #ffff;
+}
+
+.contact li{
+  list-style: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact ul{
+  text-align: left;
+  padding: 0;
+}
+
+.contact li {
+  position: relative;
+  font-size: 16px;
+  color: #ffff;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact li::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffff;
+  transition: .3s;
+}
+
+.contact li:hover:before {
+  width: 100%;
+}
+
+
+
+/* Social elements*/
+
+.social h4{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+/*copyright elements*/
+
+.copyright-info {
+  align-items: center;
+  bottom: 0;
+  position: relative;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.copyright-info h5{
+  font-size: 10px;
+}
+
+.copyright-info a{
+  text-decoration: none;
+  color: white;
+}
+
